@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+
+    <link rel="icon" href="schedule.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style/index.css">
+
+</head>
+
+<body>
+
+    <header>Habit tracker</header>
+    <div class="inserir-habito">
+        <div class="inserir-info-habito">
+            <label for="nome-habito">Hábito:</label>
+            <input type="text" name="habito" id="habito" placeholder="Digite seu hábito">
+        </div>
+        <div class="inserir-info-habito">
+            <label for="nome-habito">Descrição:</label>
+            <input type="text" name="descricao" id="descricao" placeholder="Descreva seu hábito">
+        </div>
+        <div class="inserir-info-habito">
+            <label for="nome-habito">Frequência em horas (por dia):</label>
+            <input type="number" name="freq" id="freq" placeholder="Frequência (em horas)">
+        </div>
+        <button class="adicionar-habito">
+            Adicionar
+        </button>
+        <span class="invisivel">Preencha todos os campos</span>
+    </div>
+    <main>
+        <table>
+            <thead>
+                <td>Hábito</td>
+                <td>Descrição</td>
+                <td>Frequência em horas (por dia)</td>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </main>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
