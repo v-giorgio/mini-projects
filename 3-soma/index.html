@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="plus.png">
+</head>
+
+<body>
+    <header>
+        Escolha dois números e encontre a soma
+    </header>
+    <main>
+        <div class="input-box">
+            <div class="num-box">
+                <label for="num-1"></label>
+                <input type="number" name="num-1" id="num-1" placeholder="0">
+            </div>
+            <div class="plus-symbol">
+                +
+            </div>
+            <div class="num-box">
+                <label for="num-2"></label>
+                <input type="number" name="num-2" id="num-2" placeholder="0">
+            </div>
+        </div>
+        <div class="button-box">
+            <button id="sum-button">Calcular</button>
+            <span></span>
+        </div>
+        <table>
+            <tr>
+                <td class="tdNum-1"></td>
+                <td class="tdPlus"></td>
+                <td class="tdNum-2"></td>
+                <td class="tdEquals"></td>
+                <td class="tdSum"></td>
+            </tr>
+        </table>
+    </main>
+</body>
+<script src="app.js"></script>
+
+</html>
