@@ -1,0 +1,130 @@
+body {
+  margin: 0 auto;
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+  padding: 10px 0 10px 20px;
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #000;
+  align-items: center;
+  border-right: 10px solid #ffd000;
+}
+
+.logo {
+  width: 60%;
+  letter-spacing: 4px;
+  font-size: 26px;
+  margin-left: 40px;
+  color: #ffffff;
+}
+
+.logo:hover {
+  font-size: 28px;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+.logo:hover,
+.logo:not(:hover),
+.nav-item:hover,
+.nav-item:not(:hover),
+button:hover,
+button:not(:hover) {
+  transition-duration: 0.4s;
+}
+
+nav {
+  padding: 20px;
+  background-color: #ffd000;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 1px;
+}
+
+.nav-item:hover {
+  font-size: 24px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  background-color: #000;
+  color: #ffffff;
+  padding: 5px;
+  box-shadow: 0 0 0.5rem #000;
+}
+
+main {
+  background: url("./img/background-paw.png") center fixed;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px 20px;
+  height: 100%;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+  border: 3px solid #000;
+}
+
+.img-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  margin: 20px 10px;
+  text-align: center;
+}
+
+button {
+  margin: 10px 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  letter-spacing: 3px;
+  background-color: #ffd000;
+  padding: 10px 15px;
+  border: 1px solid #ffffff;
+}
+
+button:hover {
+  cursor: pointer;
+  border-right: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  box-shadow: 0 0 1rem #ffffff;
+}
+
+footer {
+  color: #ffffff;
+  border-right: none;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 700px) {
+  header {
+    border-left: 12px solid #ffd000;
+    padding: 10px 0 10px 0;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  nav {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-item {
+    margin-bottom: 15px;
+  }
+
+  img {
+    width: 300px;
+  }
+}
