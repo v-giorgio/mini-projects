@@ -17,3 +17,9 @@
 - HTML/CSS/JavaScript (ES6)
 
 ![demo](https://user-images.githubusercontent.com/66922422/140433291-09b71620-4703-4a5f-9421-2663a53751f0.png)
+
+### Projeto 4 (05/11):
+- Resilia Pet (Landing page de um serviço de adoção)
+- HTML/CSS/JavaScript (ES6)
+
+![resilia-pet](https://user-images.githubusercontent.com/66922422/140567001-79069538-d095-48e0-8e9e-3f5cbcc87941.png)
