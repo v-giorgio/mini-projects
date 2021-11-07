@@ -1,5 +1,6 @@
 body {
   margin: 0 auto;
+  background: url("./img/background-paw.png") center fixed;
 }
 
 header,
@@ -33,8 +34,42 @@ footer {
 .nav-item:hover,
 .nav-item:not(:hover),
 button:hover,
-button:not(:hover) {
+button:not(:hover),
+input:hover,
+input:not(:hover) {
   transition-duration: 0.4s;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  height: 200px;
+  justify-content: space-around;
+  flex-direction: column;
+  font-size: 24px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 3px;
+}
+
+form div {
+  background-color: #000;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 0.5rem #ffffff;
+}
+
+form input {
+  padding: 10px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+::placeholder {
+  color: #bbbab5;
+  font-size: 18px;
+  font-style: italic;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 nav {
@@ -87,11 +122,13 @@ button {
   font-size: 18px;
   letter-spacing: 3px;
   background-color: #ffd000;
+  border-radius: 10px;
   padding: 10px 15px;
   border: 1px solid #ffffff;
 }
 
-button:hover {
+button:hover,
+input:hover {
   cursor: pointer;
   border-right: 3px solid #ffffff;
   border-bottom: 3px solid #ffffff;
@@ -101,6 +138,7 @@ button:hover {
 footer {
   color: #ffffff;
   border-right: none;
+  padding: 30px 0;
   justify-content: center;
 }
 
@@ -108,6 +146,7 @@ footer {
   header {
     border-left: 12px solid #ffd000;
     padding: 10px 0 10px 0;
+    margin-bottom: 30px;
   }
 
   .logo {
@@ -126,5 +165,9 @@ footer {
 
   img {
     width: 300px;
+  }
+
+  form {
+    text-align: center;
   }
 }
