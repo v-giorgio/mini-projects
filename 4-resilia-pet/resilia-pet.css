@@ -212,8 +212,7 @@ footer {
   }
 
   .logo {
-    margin: 20px 0;
-    text-align: center;
+    margin: 30px 30px;
   }
 
   .navbar {
@@ -241,6 +240,11 @@ footer {
   }
 
   form {
+    margin: 0 30px;
     text-align: center;
+  }
+
+  form div {
+    margin-top: 10px;
   }
 }
