@@ -16,4 +16,18 @@ const addTemplates = (main) => {
   }
 };
 
+let button = document.querySelector(".dropdown-button");
+
+button.addEventListener("click", (event) => {
+  event.preventDefault();
+  let hiddenList = document.querySelector(".navbar-button");
+  hiddenList.classList.toggle("navbar-shown");
+});
+
+window.addEventListener("resize", (event) => {
+  event.preventDefault();
+  let hiddenList = document.querySelector(".navbar-button");
+  hiddenList.classList.remove("navbar-shown");
+});
+
 onload(addTemplates(main));

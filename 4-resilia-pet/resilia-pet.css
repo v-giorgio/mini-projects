@@ -16,7 +16,6 @@ header {
 }
 
 .logo {
-  width: 60%;
   letter-spacing: 4px;
   font-size: 26px;
   margin-left: 40px;
@@ -36,7 +35,10 @@ button:hover,
 button:not(:hover),
 input:hover,
 input:not(:hover),
-.social-icon {
+.social-icon:hover,
+.social-icon:not(:hover),
+.dropdown-button:hover,
+.dropdown-button:not(:hover) {
   transition-duration: 0.2s;
 }
 
@@ -72,7 +74,7 @@ form input {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-nav {
+.navbar {
   padding: 20px;
   background-color: #ffd000;
   width: 40%;
@@ -89,6 +91,26 @@ nav {
   color: #ffffff;
   padding: 5px;
   box-shadow: 0 0 0.5rem #000;
+}
+
+.dropdown-button {
+  background-color: #ffd000;
+  width: 40px;
+  height: 40px;
+  border-radius: 30%;
+  margin-right: 30px;
+  display: none;
+}
+
+.navbar-hidden {
+  display: none;
+}
+
+.navbar-shown {
+  display: block;
+  padding: 20px;
+  background-color: #ffd000;
+  color: #000;
 }
 
 main {
@@ -190,15 +212,26 @@ footer {
   }
 
   .logo {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .navbar {
     display: none;
   }
 
-  nav {
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+  .dropdown-button {
+    display: block;
+    right: 50px;
   }
+
+  .dropdown-button:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+  }
+
   .nav-item {
     margin-bottom: 15px;
   }
